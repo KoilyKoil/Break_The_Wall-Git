@@ -13,12 +13,12 @@ public class FixedScale : MonoBehaviour
     public void SetResolution()
     {
         int setWidth = 720;                         //사용자 설정 너비(가로)
-        int setHeight = 1080;                       //사용자 설정 높이(세로)
+        int setHeight = 1280;                       //사용자 설정 높이(세로)
 
         int deviceWidth = Screen.width;     //기기의 너비 저장
         int deviceHeight = Screen.height;   //기기의 높이 저장
 
-        Screen.SetResolution(setWidth, (int)(((float)deviceHeight / deviceWidth) * setWidth), true);    //제대로된 함수 사용
+        Screen.SetResolution(setWidth, (int)(((float)deviceHeight / deviceWidth) * setWidth), false);    //제대로된 함수 사용
 
         if ((float)setWidth / setHeight < (float)deviceWidth / deviceHeight)        //사용자 설정비<기기 화면비
         {

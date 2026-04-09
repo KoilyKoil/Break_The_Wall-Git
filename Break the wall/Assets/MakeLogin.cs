@@ -12,12 +12,12 @@ public class MakeLogin : MonoBehaviour
     private void Awake()
     {
         //초기화 함수. 인스턴스 생성역할
-        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
-        PlayGamesPlatform.InitializeInstance(config);
+        //PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
+        //PlayGamesPlatform.InitializeInstance(config);
         //디버그 로그 출력용
-        PlayGamesPlatform.DebugLogEnabled = true;
+        //PlayGamesPlatform.DebugLogEnabled = true;
         //구글 관련 서비스 활성화
-        PlayGamesPlatform.Activate();
+        //PlayGamesPlatform.Activate();
     }
     
     /*
@@ -80,7 +80,7 @@ public class MakeLogin : MonoBehaviour
 
     public void DoLogout()
     {
-        PlayGamesPlatform.Instance.SignOut();
+        //PlayGamesPlatform.Instance.SignOut();
         //((PlayGamesPlatform)Social.Active).SignOut();
     }
     
